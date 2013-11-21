@@ -30,6 +30,9 @@ namespace cat.dos
 {
 	public class BatchFile : ICataloger
 	{
+		public string Name { get { return _name; } }
+		private string _name = "batch";
+
 		public string Description { get { return _description; } }
 		private string _description = "DOS Batch files (.bat .cmd).";
 
